@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>青葉大学 天文部 | 公式サイト</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: #263247;
+      background-color: #f5f7fb;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #14213d;
+      color: white;
+      padding: 16px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #fca311;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #14213d, #304d79);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 48px);
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #fca311;
+      color: #14213d;
+      padding: 12px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #ffbd50;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 70px 24px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 28px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #fca311;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 26px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #25436c;
+    }
+
+    .information {
+      background: white;
+      padding: 24px;
+      border-radius: 10px;
+    }
+
+    .information p {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .information p:last-child {
+      border-bottom: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    th, td {
+      padding: 16px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background: #e9eef7;
+      width: 25%;
+    }
+
+    .join {
+      text-align: center;
+      background: #e9eef7;
+      max-width: none;
+    }
+
+    .join h2 {
+      max-width: 900px;
+      margin: 0 auto 25px;
+    }
+
+    footer {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 28px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero {
+        padding: 75px 20px;
+      }
+
+      section {
+        padding: 50px 18px;
+      }
+
+      th, td {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">★ 青葉大学 天文部</div>
+
+    <nav>
+      <a href="#about">部活紹介</a>
+      <a href="#activities">活動内容</a>
+      <a href="#events">年間行事</a>
+      <a href="#contact">入部案内</a>
+    </nav>
+  </header>
+
+  <!-- トップ -->
+  <div class="hero">
+    <h1>星空を、もっと身近に。</h1>
+    <p>青葉大学 天文部 公式サイトへようこそ</p>
+    <a class="button" href="#about">私たちについて</a>
+  </div>
+
+  <!-- 部活紹介 -->
+  <section id="about">
+    <h2>天文部について</h2>
+
+    <p>
+      青葉大学天文部は、星空の観察や天文学の学習を通じて
+      宇宙の魅力を楽しむ学生団体です。
+    </p>
+
+    <p>
+      初心者から経験者まで幅広い学生が所属しています。
+      専門的な知識や望遠鏡を持っていなくても参加できます。
+    </p>
+
+    <div class="information">
+      <p><strong>部員数：</strong> 18名（架空のデータ）</p>
+      <p><strong>活動日時：</strong> 毎週水曜日 18:00〜20:00</p>
+      <p><strong>活動場所：</strong> 学生会館2階・大学構内</p>
+      <p><strong>会費：</strong> 年額2,000円</p>
+    </div>
+  </section>
+
+  <!-- 活動内容 -->
+  <section id="activities">
+    <h2>主な活動内容</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🔭 天体観測</h3>
+        <p>
+          望遠鏡を使用して月や惑星、星雲などを観察します。
+          季節ごとの星座も楽しめます。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📚 勉強会</h3>
+        <p>
+          天文学や宇宙開発に関する話題を部員同士で共有します。
+          初心者向けの内容も扱います。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌌 観測合宿</h3>
+        <p>
+          光の少ない地域に出かけて星空を観察します。
+          部員同士の交流も目的としています。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 年間イベント -->
+  <section id="events">
+    <h2>年間行事</h2>
+
+    <table>
+      <tr>
+        <th>4月</th>
+        <td>新入生歓迎会・体験観測会</td>
+      </tr>
+      <tr>
+        <th>6月</th>
+        <td>天文学勉強会</td>
+      </tr>
+      <tr>
+        <th>8月</th>
+        <td>夏季観測合宿</td>
+      </tr>
+      <tr>
+        <th>11月</th>
+        <td>大学祭・天体写真展示</td>
+      </tr>
+      <tr>
+        <th>2月</th>
+        <td>冬季観測会</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- 新入部員募集 -->
+  <section id="contact" class="join">
+    <h2>新入部員募集中！</h2>
+
+    <p>
+      学年・経験を問わず、新しい部員を募集しています。<br>
+      見学だけでも大歓迎です！
+    </p>
+
+    <p>
+      お問い合わせは以下のメールアドレスまで。
+    </p>
+
+    <a class="button" href="mailto:example@example.com">
+      メールで問い合わせる
+    </a>
+
+    <p style="font-size: 12px;">
+      ※ メールアドレスはテスト用です。
+    </p>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p>青葉大学 天文部（架空の学生団体）</p>
+    <p>&copy; 2026 Aoba University Astronomy Club</p>
+  </footer>
+
+</body>
+</html>
